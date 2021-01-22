@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./baitap13.css"/>
+  <title>Document</title>
+  <link rel="shortcut icon" href="../images/town_hall_logo.gif">
+</head>
+<body>
+  <header class="tomau">
+    <img src="./town_hall_logo.gif" alt="town_hall_logo">
+    <h2>San Joaquin Valley Town Hall</h2>
+    <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+</header>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Speakers</a>
+            <ul>
+                <li><a href="#">Jeffrey Toobin</a></li>
+                <li><a href="#">Andrew Ross Sorkin</a></li>
+                <li><a href="#">Amy Chua</a></li>
+                <li><a href="sampson.html">Scott Sampson</a>
+                    <ul>
+                        <li><a href="#">September 2010</a></li>
+                        <li><a href="#">February 2015</a></li>
+                    </ul>
+                </li>    
+                <li><a href="march.html">Carlos Eire</a></li>
+                <li><a href="april.html">Roman Tynan</a></li>
+            </ul>
+        </li>
+        <li><a href="luncheohs.html" class="current">luncheohs</a></li>
+        <li><a href="tickers.html" class="current">tickets</a></li>
+        <li class="lastitem"><a href="aboutus.html">About Us</a>
+            <ul>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Board of Directors</a></li>
+                <li><a href="#">Past Speakers</a>
+                    <ul>
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2012</a></li>
+                        <li><a href="#">2011</a></li>
+                        <li><a href="#">2010</a></li>                  			
+                    </ul>
+                </li>    
+                <li><a href="#">Contact Information</a></li>
+            </ul>    				
+        </li>         
+    </ul>
+</nav>
+<main>
+    <div class="images1">
+        <h2 class="cochu">Guest speakers</h2>
+        
+        <h3>October<br /><a class="daugach" href="../speakers/toobin.html">Jeffrey Toobin</a></h3>       
+        <img src="./toobin75.jpg" alt="Jeffrey Toobin" width="">
+        <h3>November<br /><a class="daugach" href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+        <img src="./sorkin75.jpg" alt="Andrew Ross Sorkin" width="">
+        <h3>january<br /><a class="daugach" href="../speakers/amychua.html">AMychua</a></h3>
+        <img src="../images/chua75.jpg" alt="Andrew Ross Sorkin" width="">
+        <h3>February<br /><a class="daugach" href="../speakers/scott sampson.html">scott Sampson</a></h3>
+        <img src="../images/sampson75.jpg" alt="Andrew Ross Sorkin" width="">
+        
+        </div>
+        <form name="myfrom" action="register.php" method="post">
+            <h3>Order From</h3>
+            <h4>MenBer Information</h4>
+        
+           <fieldset class="style">
+            <label class="margin11" for="E-mail">E-mail:</label>
+            <input type="text" id="E-mail" autofocus><br>
+
+            <label class="margin10" for="firstname">firstname:</label>
+            <input type="text" id="firstname"><br>
+            
+            <label class="margin9" for="lastname">last name:</label>
+            <input type="text" id="lastname"><br>
+                        
+            <label class="margin8" for="Address">Address:</label>
+            <input type="text" id="Address"><br>
+            
+            <label class="margin7" for="City">Cyti:</label>
+            <input type="text" id="City"><br>
+            
+            <label class="margin6" for="State">State:</label>
+            <input type="text" id="State" placeholder="2-cnaracter code"><br>
+            
+            <label class="margin5" for="ZipCode">Zip CoDe:</label>
+            <input type="text" id="ZipCode" placeholder="5 of 9 digits" required pattern="\d{5}([\-]\d{4})?"
+            title="must be 99999 of 99999-9999"><br>
+            
+            <label class="margin4" for="PhoneNumber">Phone NumBer:</label>
+            <input type="text" name="PhoneNumber" placeholder="999-999-9999" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+            title="Must be 999-999-9999">
+            
+        </fieldset>
+          <h4>Ordering Information</h4>
+            <fieldset class="style">
+             <label  for="Numberpakage">Number Pakage:</label>
+             <select name="Numberpakage" id="Numberpakage">
+                 <option value="n">Number pakage</option> 
+                 <option value="D">Donor Pakage</option> 
+                 <option value="S">Single Tickers</option> 
+             </select><br>
+                 <label  for="Numberoftickers">Number of tickers:</label>
+                <input type="text" id="Numberoftickers" value="Number of single tickets">
+            </fieldset>
+          
+            <h4>Payment Methord</h4>
+            <fieldset>
+            <input type="radio"  id="BillMe" name="gender" value="BillMe">
+            <label class="margin12" for="Billme" >Bill me</label>
+            <input type="radio" id="Creditcard" name="gender" value="Creditcard">
+            <label class="margin13" for="Creditcard">Creditcard</label>
+            </fieldset>
+            
+        
+            <h4>Credit Card Information</h4>
+            <fieldset class="style" >
+            <label class="margin" for="CardType">CardType:</label>
+             <select name="CardType" id="CardType">
+                 <option value="v">Visa</option> 
+                 <option value="M">MasterCard</option> 
+                 <option value="D">Discover</option>
+            </select><br>
+                <label  class="margin1" for="cardNumber">card Number:</label>
+                 <input type="text" id="cardNumber" placeholder="16digits"><br>
+            
+            <label class="margin2" for="Expirationdate">Expiration date:</label>
+             <select name="Expirationdate" id="Expirationdate">
+                 <option value="j">january</option> 
+                 <option value="F">February</option> 
+                 <option value="M">March</option>
+                 <option value="A">April</option> 
+                 <option value="M">May</option> 
+                 <option value="j">June</option> 
+                 <option value="j">july</option> 
+                 <option value="A">August</option> 
+                 <option value="S">September</option> 
+                 <option value="O">October</option> 
+                 <option value="N">November</option>    
+                 <option value="D">December</option>
+             </select> 
+                 <select id="Expirationdate">
+                    <option value="7">2017</option> 
+                    <option value="8">2018</option> 
+                    <option value="9">2019</option>
+                    <option value="0">2020</option> 
+                    <option value="1">2021</option> 
+                 </select>
+               </fieldset>
+
+             <div>
+                 <h4>Submit Your Oder</h4>
+                 <fieldset class="style">
+                 <label>&nbsp;</label>
+                 <input type="Submit" id="Submit" value="Submit">
+                 <input type="reset" id="reset" value="reset fields">
+                 </fieldset>
+            </div>      
+         </form>
+ </main>
+        <footer>
+         <p>&copy; Copyright 2015 San Joaquin Valley Town Hall</p>
+        </footer> 

@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 96%;
+    max-width: 960px;
+    background-color: bisque;
+    margin: 15px auto;
+    padding:  0;
+    border: 2px solid black;
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    box-shadow: 3px 3px rgb(44, 42, 42);
+    grid-template-areas:
+        "head"
+        "navi"
+        "main"
+        "foot";
+  }
+  .tomau {
+    background-image: -webkit-linear-gradient(45deg,grey 0%, white 50%, blue 100%);
+  }
+  header {
+    width: 100%;
+    padding-bottom: 2em;
+  }
+  .daugach {
+    text-decoration: none;
+  }
+  header img {
+   width: 8.0808%;
+   max-width: 80px;
+   min-width: 40px;
+   float: left;
+   margin-left: 2.0202%;
+  }
+  header h2 {
+   font-size: 2.15em;
+   color: #f2972e;
+   text-shadow: 2px 3px 0 black;
+   margin-left: 12.1212%;
+   margin-bottom: -0.75em;
+   margin-top: 5px;
+  }
+  header h3 {
+   font-size: 1.25em;
+   font-style: italic;
+   margin-left: 12.1212%;
+  }
+  #nav_menu ul {
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    background-color: blue;
+  }
+  #nav_menu ul {
+  list-style: none;
+  position: relative;    /* So the first submenu can be positioned within the main menu */
+  }
+  #nav_menu ul li {
+  float: left;
+  }
+  #nav_menu ul ul {
+  display: none;         /* Don't display submenu until hover of the li element */
+  position: absolute;
+  top: 100%;             /* Position the submenu at the bottom of the main menu */
+  }
+  #nav_menu ul ul li {
+  float: none;           /* Display the submenus vertically */
+  position: relative;    /* So the second submenu can be positioned within the first submenu */
+  }
+  #nav_menu ul ul li ul {
+  position: absolute;
+  left: 100%;            /* Position the second submenu at the right side of the li element */ 
+  top: 0;                /* Position the second submenu at the top of the li element */
+  }
+  #nav_menu ul li.lastitem ul li ul {
+  position: absolute;
+  left: -100%;           /* Position the second submenu at the left side of the li element */ 
+  top: 0;                /* Position the second submenu at the top of the li element */
+  }
+  #nav_menu ul li:hover > ul {
+  display: block;        /* Display the submenu on hover of the li element */
+  }
+  #nav_menu > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+  }
+  
+  /* The styles for the formatting of the 3-tier navigation menu */
+  #nav_menu ul {
+  margin: 0;
+  padding: 0;
+  }
+  #nav_menu ul li a {
+  text-align: center;
+  display: block;
+  width: 176px;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  }
+  #nav_menu ul li a.lastitem {
+  width: 178px;               /* So the menu fills the 706px width of the page */
+  }
+  #nav_menu ul li a.current {
+  color: yellow;
+  }
+  #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+  background-color: gray;
+  }
+  main {
+    margin-top: -22px;
+    display: grid;
+    grid-template: auto / 1fr 74%;
+    padding: 10px;
+  }
+  fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+  }
+  h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+  }
+label,input,select {
+  font-size: 90%;
+  font-weight: bolder;
+}
+input,select {
+  width: 15em;
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+.style {
+  text-align: center;
+}
+#Expirationdate {
+  width: 85px;
+}
+.margin {
+  margin-left: 47px;
+}
+.margin1 {
+  margin-left: 34px;
+}
+.margin2 {
+  margin-left: -20px;
+}
+.margin4 {
+  margin-left: 13px;
+}
+.margin5 {
+  margin-left: 50px;
+}
+.margin6 {
+  margin-left: 77px;
+}
+.margin7 {
+  margin-left: 86px;
+}
+.margin8 {
+  margin-left: 57px;
+}
+.margin9 {
+  margin-left: 48px;
+}
+.margin10 {
+  margin-left: 50px;
+}
+.margin11 {
+  margin-left: 70px;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-top: 2px solid;
+}
+input:hover {
+  border: 2px solid red;
+}
+.margin12 {
+  margin-left: -98px;
+}
+.margin13 {
+  margin-left: -98px;
+}
